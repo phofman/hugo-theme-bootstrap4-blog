@@ -10,6 +10,17 @@
       {{ partialCached "recent.html" .}}
   {{ end }}
 
+  {{ with .Site.Params.apps_games }}
+  <section class="sidebar-module">
+      <h4>{{ i18n "apps_games" }}</h4>
+      <ol class="list-unstyled">
+        {{ range . }}
+        <li><a href="{{ .url | absURL }}">{{ .name }}</a><br /><a href="{{ .url | absURL }}"><img src="{{ .image | absURL }}" /></a></li>
+        {{ end }}
+      </ol>
+  </section>
+  {{ end }}
+
   {{ with .Site.Menus.sidebar }}
   <section class="sidebar-module">
     <h4>{{ i18n "projects" }}</h4>

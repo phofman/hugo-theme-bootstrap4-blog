@@ -1,6 +1,9 @@
 - id: about
   translation: "About"
 
+- id: apps_games
+  translation: "Apps and Games"
+
 - id: home
   translation: "Home"
 
