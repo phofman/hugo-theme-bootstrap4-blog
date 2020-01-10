@@ -5,6 +5,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+### Added
+- Farsi strings for user interface
+
+## Updated
+- bootstrap 4.4.1
+
+## [[1.3.3]] - 2019-12-02
+### Fixed
+- "Home" link for blogs that are not at the root of the domain (@phofman #115)
+
+### Changed
+- Use "posts" instead of "post" in exampleSite to align closer with Hugo quick start docs (@sboots #117)
+
+### Updated
+- node-sass 4.13.0 and rtlcss 2.4.1
+
+## [[1.3.2]] - 2019-06-20
 ### Changed
 - Only list "Regular" pages in recent posts in sidebar (@alanorth)
 - Use absURL instead of baseURL to be more robust with different site configurations (@TommySprat)
