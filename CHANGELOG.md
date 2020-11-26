@@ -4,12 +4,59 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## [[1.5.1]] - 2020-11-15
+### Updated
+- Minor version bump for bootstrap, node-sass, and fontawesome
+- Update to webpack 5 (brings better tree shaking, reduces fontawesome JS by 8K)
+
+### Fixed
+- JSON-LD keyword formatting @jeremyrcampb #140
+
+### Added
+- Ability to omit date in front matter @jeremyrcampb #141
+
+## [[1.5.0]] - 2020-05-17
+### Updated
+- i18n language keys for German (#dermellor, #131)
+- Boostrap v4.5.0
+- Minor version bump for webpack, node-sass, and fontawesome
+
+### Changed
+- Use Haven for GDPR-compliant popup instead of cookieconsent, which is now
+configured as *opt-in* and does not load Google Analytics or send a hit until
+the user agrees.
+  - Note to translators that some strings have changed, please check:
+    - `cookieAccept`: the string for the "Agree" button
+    - `cookieDecline`: the string for the "Disagree" button
+
+## [[1.4.2]] - 2020-03-22
+### Fixed
+- Encoding of dates in HTML (@alanorth)
+
+## [[1.4.1]] - 2020-03-19
+### Updated
+- npm dependencies: rtlcss 2.5.0, webpack 4.42.0, fontawesome solid icons 5.12.1
+
+### Fixed
+- Fix "Unparsable structured data" error in JSON-LD (@alanorth)
+
+## [[1.4.0]] - 2020-01-28
 ### Added
 - Farsi strings for user interface
 
-## Updated
+### Updated
 - bootstrap 4.4.1
+- Fix typo in README.md (@xekon, #118)
+- Font Awesome 5 (make sure you [update](https://fontawesome.com/how-to-use/on-the-web/setup/upgrading-from-version-4) any custom icons you might be using in your content, site layouts, partials, etc).
+
+### Changed
+- Use Hugo's built-in subresource integrity support instead of the generatesri
+tooling that I wrote by hand a few years ago (#120, @alanorth)
+- Use Font Awesome SVGs via JavaScript instead of web fonts (@alanorth)
+- Category and tag links now have a trailing slash (#128, @alanorth)
+
+### Removed
+- Several references to Google Plus (@xekon, #122)
 
 ## [[1.3.3]] - 2019-12-02
 ### Fixed
